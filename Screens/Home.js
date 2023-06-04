@@ -31,109 +31,193 @@ export default function Home({ navigation }) {
       title: 'ATVMs',
       value: 'ATVMs',
       image: require('../images/atvms.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '002',
       title: 'Booking Counter',
       value: 'Booking Counter',
       image: require('../images/booking.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '003',
       title: 'PRS Counter',
       value: 'PRS Counter',
       image: require('../images/prs.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '004',
       title: 'Parcel Office',
       value: 'Parcel Office',
       image: require('../images/pr.jpg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '005',
       title: 'Waiting Hall',
       value: 'Waiting Hall',
       image: require('../images/wh.jpg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '006',
       title: 'Divyangjan Facility',
       value: 'Divyangjan Facility',
       image: require('../images/dv.jpg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '007',
       title: 'Parking',
       value: 'Parking',
       image: require('../images/parking.jpg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '008',
       title: 'Out Gates',
       value: 'Out Gates',
       image: require('../images/outgate.jpg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '009',
       title: 'Stair Case',
       value: 'Stair Case',
       image: require('../images/str.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '010',
       title: 'Escalator',
       value: 'Escalator',
       image: require('../images/esc.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '011',
       title: 'Lift',
       value: 'Lift',
       image: require('../images/lift.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '012',
       title: 'Cloak Rooms',
       value: 'Cloak Rooms',
       image: require('../images/cr.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '013',
       title: 'Drinking Water',
       value: 'Drinking Water',
       image: require('../images/dw.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '014',
       title: 'Catering Stall',
       value: 'Catering',
       image: require('../images/catg.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '015',
       title: 'Medical',
       value: 'Medical',
       image: require('../images/medical.jpeg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '016',
       title: 'Retiring Room',
       value: 'Retiring Room',
       image: require('../images/rr.jpg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '017',
       title: 'Bus Stop',
       value: 'Bus Stop',
       image: require('../images/bus.jpg'),
+      onclick: () =>
+        MapsWebView(
+          (url =
+            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+        ),
     },
     {
       id: '018',
       title: 'Feedback',
       value: 'Feedback',
       image: require('../images/feed.jpg'),
-
     },
   ];
 
@@ -156,12 +240,15 @@ export default function Home({ navigation }) {
       const result = await response.json();
       console.log(result);
       setSelectedAmenity(result);
-      if (result.length > 0) {
-        setLocationsList([...new Set(result.map(item => item.location_name))]);
-        console.log(locationsList);
-        setModalVisible(true);
-      }
-      else if (item.value == 'Feedback') {
+      // if (result.length > 0) {
+      //     navigation.navigate('Feedback', {
+      //       selectedStation: selectedStation,
+      //     });
+      //   // setLocationsList([...new Set(result.map(item => item.location_name))]);
+      //   // console.log(locationsList);
+      //   // setModalVisible(true);
+      // }
+       if (item.value == 'Feedback') {
         navigation.navigate('Feedback', {
           selectedStation: selectedStation,
         });
@@ -181,6 +268,10 @@ export default function Home({ navigation }) {
     });
   };
 
+
+  function MapsWebView(url) {
+    navigation.navigate('MapsWebView', {geturl: url});
+  }
   return (
     <View style={sty.container}>
       <Text
