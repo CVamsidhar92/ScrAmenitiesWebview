@@ -32,10 +32,11 @@ export default function Home({ navigation }) {
       value: 'ATVMs',
       image: require('../images/atvms.jpeg'),
       onclick: () =>
-        MapsWebView(
-          (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
-        ),
+      MapsWebView(
+        (url =
+          'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing'),
+      ),
+     
     },
     {
       id: '002',
@@ -45,7 +46,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1_FjMBWgQQw_WE1Uqnczs2xTQIGFZO1c&usp=sharing'),
         ),
     },
     {
@@ -56,7 +57,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=158-IQSsQd33ncfcH5rD3G_suKwheXU4&usp=sharing'),
         ),
     },
     {
@@ -67,7 +68,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1cYXIjM8DWdVgEMuSXiKgVp7MacX8F9Q&usp=sharing'),
         ),
     },
     {
@@ -78,19 +79,14 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1vt9RK7JKb7n98f6AB1LigZGVTMGnRtQ&usp=sharing'),
         ),
     },
     {
       id: '006',
       title: 'Divyangjan Facility',
       value: 'Divyangjan Facility',
-      image: require('../images/dv.jpg'),
-      onclick: () =>
-        MapsWebView(
-          (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
-        ),
+      image: require('../images/dv.jpg'),     
     },
     {
       id: '007',
@@ -100,7 +96,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1H6zbnArI3i407iRkAFTGJnGmP66N1xE&usp=sharing'),
         ),
     },
     {
@@ -111,7 +107,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1whPq1L2DNEBXGshbIWNITbBap5ER9Xs&usp=sharing'),
         ),
     },
     {
@@ -122,7 +118,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1TBMck2mdbRkJM6N4nEHMqofkmbHTGo0&usp=sharing'),
         ),
     },
     {
@@ -133,7 +129,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1yRBX1kmR574Ure9YgNej1mXDXzMM55Q&usp=sharing'),
         ),
     },
     {
@@ -144,7 +140,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1OF74XYpg8Eb6rJeontjiX6dRPio8S0A&usp=sharing'),
         ),
     },
     {
@@ -155,7 +151,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1k2ZE680MA-pBNricCOAIyHmxYQOSgYQ&usp=sharing'),
         ),
     },
     {
@@ -166,7 +162,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1qtXSLY9sF-dmP1nyXOh-VJAG4DyhTSU&usp=sharing'),
         ),
     },
     {
@@ -177,7 +173,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1JmQ8yRBj55_fBMo901kS1KhhoZrvFX4&usp=sharing'),
         ),
     },
     {
@@ -188,7 +184,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1BUmL34Y7EbSK25V4r4QW_3qT73PNl2M&usp=sharing'),
         ),
     },
     {
@@ -199,7 +195,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1fGRdw7px7MNqaQchnaGFV9mzOE5c7Ws&usp=sharing'),
         ),
     },
     {
@@ -210,7 +206,7 @@ export default function Home({ navigation }) {
       onclick: () =>
         MapsWebView(
           (url =
-            'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing '),
+            'https://www.google.com/maps/d/edit?mid=1e92_74dZpk_QnXZHjLZufRwX_EUuiQs&usp=sharing'),
         ),
     },
     {
