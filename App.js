@@ -18,7 +18,7 @@ export default function App() {
         <Stack.Screen
           name="Splash"
           component={Splash}
-          options={{ headerShown: false }}
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="SelectStn"
@@ -70,12 +70,12 @@ export default function App() {
           }}
         />
 
-<Stack.Screen
+        <Stack.Screen
           name="Feedback"
           component={Feedback}
           options={{
             headerTitle: 'Feedback',
-            headerTitleAlign: 'center',            
+            headerTitleAlign: 'center',
             headerTitleStyle: {
               color: 'white',
               fontSize: 18,
@@ -86,12 +86,12 @@ export default function App() {
           }}
         />
 
-<Stack.Screen
+        <Stack.Screen
           name="MapsWebView"
           component={MapsWebview}
           options={{
             headerTitle: 'Maps',
-            headerTitleAlign: 'center',            
+            headerTitleAlign: 'center',
             headerTitleStyle: {
               color: 'white',
               fontSize: 18,
@@ -101,7 +101,6 @@ export default function App() {
             },
           }}
         />
-
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -31,252 +31,228 @@ export default function Home({ navigation }) {
       title: 'ATVMs',
       value: 'ATVMs',
       image: require('../images/atvms.jpeg'),
-      url:'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing'    
     },
-{
-  id: '002',
-    title: 'Booking Counter',
+    {
+      id: '002',
+      title: 'Booking Counter',
       value: 'Booking Counter',
-        image: require('../images/booking.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=1_FjMBWgQQw_WE1Uqnczs2xTQIGFZO1c&usp=sharing'
+      image: require('../images/booking.jpeg'),
     },
-{
-  id: '003',
-    title: 'PRS Counter',
+    {
+      id: '003',
+      title: 'PRS Counter',
       value: 'PRS Counter',
-        image: require('../images/prs.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=158-IQSsQd33ncfcH5rD3G_suKwheXU4&usp=sharing'
+      image: require('../images/prs.jpeg'),
     },
-{
-  id: '004',
-    title: 'Parcel Office',
+    {
+      id: '004',
+      title: 'Parcel Office',
       value: 'Parcel Office',
-        image: require('../images/pr.jpg'),
-        url:'https://www.google.com/maps/d/edit?mid=1cYXIjM8DWdVgEMuSXiKgVp7MacX8F9Q&usp=sharing'
+      image: require('../images/pr.jpg'),
     },
-{
-  id: '005',
-    title: 'Waiting Hall',
+    {
+      id: '005',
+      title: 'Waiting Hall',
       value: 'Waiting Hall',
-        image: require('../images/wh.jpg'),
-        url:'https://www.google.com/maps/d/edit?mid=1vt9RK7JKb7n98f6AB1LigZGVTMGnRtQ&usp=sharing'
+      image: require('../images/wh.jpg'),
     },
-{
-  id: '006',
-    title: 'Divyangjan Facility',
+    {
+      id: '006',
+      title: 'Divyangjan Facility',
       value: 'Divyangjan Facility',
-        image: require('../images/dv.jpg'),
+      image: require('../images/dv.jpg'),
     },
-{
-  id: '007',
-    title: 'Parking',
+    {
+      id: '007',
+      title: 'Parking',
       value: 'Parking',
-        image: require('../images/parking.jpg'),
-        url:'https://www.google.com/maps/d/edit?mid=1H6zbnArI3i407iRkAFTGJnGmP66N1xE&usp=sharing'
+      image: require('../images/parking.jpg'),
     },
-{
-  id: '008',
-    title: 'Out Gates',
+    {
+      id: '008',
+      title: 'Out Gates',
       value: 'Out Gates',
-        image: require('../images/outgate.jpg'),
-        url:'https://www.google.com/maps/d/edit?mid=1whPq1L2DNEBXGshbIWNITbBap5ER9Xs&usp=sharing'
+      image: require('../images/outgate.jpg'),
     },
-{
-  id: '009',
-    title: 'Stair Case',
+    {
+      id: '009',
+      title: 'Stair Case',
       value: 'Stair Case',
-        image: require('../images/str.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=1TBMck2mdbRkJM6N4nEHMqofkmbHTGo0&usp=sharing'
+      image: require('../images/str.jpeg'),
     },
-{
-  id: '010',
-    title: 'Escalator',
+    {
+      id: '010',
+      title: 'Escalator',
       value: 'Escalator',
-        image: require('../images/esc.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=1yRBX1kmR574Ure9YgNej1mXDXzMM55Q&usp=sharing'
+      image: require('../images/esc.jpeg'),
     },
-{
-  id: '011',
-    title: 'Lift',
+    {
+      id: '011',
+      title: 'Lift',
       value: 'Lift',
-        image: require('../images/lift.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=1OF74XYpg8Eb6rJeontjiX6dRPio8S0A&usp=sharing'
+      image: require('../images/lift.jpeg'),
     },
-{
-  id: '012',
-    title: 'Cloak Rooms',
+    {
+      id: '012',
+      title: 'Cloak Rooms',
       value: 'Cloak Rooms',
-        image: require('../images/cr.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=1k2ZE680MA-pBNricCOAIyHmxYQOSgYQ&usp=sharing'
+      image: require('../images/cr.jpeg'),
     },
-{
-  id: '013',
-    title: 'Drinking Water',
+    {
+      id: '013',
+      title: 'Drinking Water',
       value: 'Drinking Water',
-        image: require('../images/dw.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=1qtXSLY9sF-dmP1nyXOh-VJAG4DyhTSU&usp=sharing'
+      image: require('../images/dw.jpeg'),
     },
-{
-  id: '014',
-    title: 'Catering Stall',
+    {
+      id: '014',
+      title: 'Catering Stall',
       value: 'Catering',
-        image: require('../images/catg.jpeg'),
-        url: 'https://www.google.com/maps/d/edit?mid=1JmQ8yRBj55_fBMo901kS1KhhoZrvFX4&usp=sharing'
+      image: require('../images/catg.jpeg'),
     },
-{
-  id: '015',
-    title: 'Medical',
+    {
+      id: '015',
+      title: 'Medical',
       value: 'Medical',
-        image: require('../images/medical.jpeg'),
-        url:'https://www.google.com/maps/d/edit?mid=1BUmL34Y7EbSK25V4r4QW_3qT73PNl2M&usp=sharing'
+      image: require('../images/medical.jpeg'),
     },
-{
-  id: '016',
-    title: 'Retiring Room',
+    {
+      id: '016',
+      title: 'Retiring Room',
       value: 'Retiring Room',
-        image: require('../images/rr.jpg'),
-        url:'https://www.google.com/maps/d/edit?mid=1fGRdw7px7MNqaQchnaGFV9mzOE5c7Ws&usp=sharing'
+      image: require('../images/rr.jpg'),
     },
-{
-  id: '017',
-    title: 'Bus Stop',
+    {
+      id: '017',
+      title: 'Bus Stop',
       value: 'Bus Stop',
-        image: require('../images/bus.jpg'),
-          url: 'https://www.google.com/maps/d/edit?mid=1e92_74dZpk_QnXZHjLZufRwX_EUuiQs&usp=sharing'
-
-},
-{
-  id: '018',
-    title: 'Feedback',
+      image: require('../images/bus.jpg'),
+    },
+    {
+      id: '018',
+      title: 'Feedback',
       value: 'Feedback',
-        image: require('../images/feed.jpg'),
+      image: require('../images/feed.jpg'),
+
     },
   ];
 
-const selectAmenity = async item => {
-  try {
-    const response = await fetch(
-      'https://digitalscr.in/ScrStnAmenities/api/getstalldetails',
-      {
-        method: 'POST',
-        body: JSON.stringify({
-          stnName: selectedStation.name,
-          amenityType: item.value,
-        }),
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
+  const selectAmenity = async item => {
+    try {
+      const response = await fetch(
+        'https://digitalscr.in/ScrStnAmenities/api/getstalldetails',
+        {
+          method: 'POST',
+          body: JSON.stringify({
+            stnName: selectedStation.name,
+            amenityType: item.value,
+          }),
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
         },
-      },
-    );
-    const result = await response.json();
-    console.log(result);
-    setSelectedAmenity(result);
-    navigation.navigate('MapsWebView', { geturl: item.url });
-    // if (result.length > 0) {
-    //     navigation.navigate('Feedback', {
-    //       selectedStation: selectedStation,
-    //     });
-    //   // setLocationsList([...new Set(result.map(item => item.location_name))]);
-    //   // console.log(locationsList);
-    //   // setModalVisible(true);
-    // }
-    if (item.value == 'Feedback') {
-      navigation.navigate('Feedback', {
-        selectedStation: selectedStation,
-      });
+      );
+      const result = await response.json();
+      console.log(result);
+      setSelectedAmenity(result);
+      if (result.length > 0) {
+        setLocationsList([...new Set(result.map(item => item.location_name))]);
+        console.log(locationsList);
+        navigation.navigate('AmenitiesList',{list:locationsList});
+        // setModalVisible(true);
+      }
+      else if (item.value == 'Feedback') {
+        navigation.navigate('Feedback', {
+          selectedStation: selectedStation,
+        });
+      }
+    } catch (error) {
+      console.error(error);
     }
-  } catch (error) {
-    console.error(error);
-  }
-};
+  };
 
-const showAmenitiesList = location => {
-  console.log(location);
-  toggleModal();
-  navigation.navigate('AmenitiesList', {
-    list: selectedAmenity.filter(el => {
-      return el.location_name == location;
-    }),
-  });
-};
+  const showAmenitiesList = location => {
+    console.log(location);
+    toggleModal();
+    navigation.navigate('AmenitiesList', {
+      list: selectedAmenity.filter(el => {
+        return el.location_name == location;
+      }),
+    });
+  };
 
-
-function MapsWebView(url) {
-  console.log('im called')
-  navigation.navigate('MapsWebView', { geturl: url });
-}
-return (
-  <View style={sty.container}>
-    <Text
-      style={{
-        fontSize: 18,
-        fontWeight: 'bold',
-        alignSelf: 'center',
-        color: 'blue'
-      }}>
-      {'Welcome To ' + selectedStation.name}
-    </Text>
-    <ScrollView>
-      <View style={sty.itemContainer}>
-        {data.map(item => (
-          <View style={sty.item} key={item.id}>
-            <TouchableOpacity
-              style={sty.item}
-              onPress={() => selectAmenity(item)}>
-              <Image
-                source={item.image}
-                style={sty.img1}
-                resizeMode={'contain'}
-              />
-            </TouchableOpacity>
-            <Text style={sty.title}>{item.title}</Text>
-          </View>
-        ))}
-      </View>
-    </ScrollView>
-    <ScrollView>
-      <View>
-        {selectedAmenity.length > 0 ? (
-          <ScrollView>
-            <Modal isVisible={isModalVisible}>
-              <View style={{ flex: 1 }}>
-                {selectedAmenity[0].amenity_type == 'ATVMS' ? (
-                  <Text style={{ color: 'white', alignSelf: 'center', fontWeight: 'bold', fontSize: 18 }}> Automatic Ticket Vending Machine</Text>
-                ) : null}
-                {selectedAmenity[0].amenity_type == 'PRS Counter' ? (
-                  <Text style={{ color: 'white', alignSelf: 'center', fontWeight: 'bold', fontSize: 18 }}> Passenger Reservation System</Text>
-                ) : null}
-                {selectedAmenity[0].amenity_type != 'ATVMS' && selectedAmenity[0].amenity_type != 'PRS Counter' ? (
-                  <Text style={{ color: 'white', alignSelf: 'center', fontWeight: 'bold', fontSize: 18 }}> {selectedAmenity[0].amenity_type}</Text>)
-                  : null}
+  return (
+    <View style={sty.container}>
+      <Text
+        style={{
+          fontSize: 18,
+          fontWeight: 'bold',
+          alignSelf: 'center',
+          color: 'blue'
+        }}>
+        {'Welcome To ' + selectedStation.name}
+      </Text>
+      <ScrollView>
+        <View style={sty.itemContainer}>
+          {data.map(item => (
+            <View style={sty.item} key={item.id}>
+              <TouchableOpacity
+                style={sty.item}
+                onPress={() => selectAmenity(item)}>
+                <Image
+                  source={item.image}
+                  style={sty.img1}
+                  resizeMode={'contain'}
+                />
+              </TouchableOpacity>
+              <Text style={sty.title}>{item.title}</Text>
+            </View>
+          ))}
+        </View>
+      </ScrollView>
+      <ScrollView>
+        <View>
+          {selectedAmenity.length > 0 ? (
+            <ScrollView>
+              <Modal isVisible={isModalVisible}>
+                <View style={{ flex: 1 }}>
+                  {selectedAmenity[0].amenity_type == 'ATVMS' ? (
+                    <Text style={{ color: 'white', alignSelf: 'center', fontWeight: 'bold', fontSize: 18 }}> Automatic Ticket Vending Machine</Text>
+                  ) : null}
+                  {selectedAmenity[0].amenity_type == 'PRS Counter' ? (
+                    <Text style={{ color: 'white', alignSelf: 'center', fontWeight: 'bold', fontSize: 18 }}> Passenger Reservation System</Text>
+                  ) : null}
+                  {selectedAmenity[0].amenity_type != 'ATVMS' && selectedAmenity[0].amenity_type != 'PRS Counter' ? (
+                    <Text style={{ color: 'white', alignSelf: 'center', fontWeight: 'bold', fontSize: 18 }}> {selectedAmenity[0].amenity_type}</Text>)
+                    : null}
 
 
-                {locationsList.map((item, index) => (
-                  <Button
-                    key={index}
-                    style={{ marginTop: 10 }}
-                    mode="contained"
-                    onPress={() => showAmenitiesList(item)}>
-                    {item}
-                  </Button>
-                ))}
+                  {locationsList.map((item, index) => (
+                    <Button
+                      key={index}
+                      style={{ marginTop: 10 }}
+                      mode="contained"
+                      onPress={() => showAmenitiesList(item)}>
+                      {item}
+                    </Button>
+                  ))}
 
-              </View>
+                </View>
 
-              <Button
-                mode="contained"
-                buttonColor="red"
-                onPress={() => setModalVisible(!isModalVisible)}>
-                Close
-              </Button>
-            </Modal>
-          </ScrollView>
-        ) : null}
-      </View>
-    </ScrollView>
-  </View>
-);
+                <Button
+                  mode="contained"
+                  buttonColor="red"
+                  onPress={() => setModalVisible(!isModalVisible)}>
+                  Close
+                </Button>
+              </Modal>
+            </ScrollView>
+          ) : null}
+        </View>
+      </ScrollView>
+    </View>
+  );
 }
 
 const sty = StyleSheet.create({
@@ -328,13 +304,13 @@ const sty = StyleSheet.create({
     width: '98%',
 
   },
-
+ 
   title: {
     marginTop: -3,
     color: 'black',
     textAlign: 'center',
     justifyContent: 'center',
-    fontWeight: 'bold',
+    fontWeight:'bold',
 
   },
 });

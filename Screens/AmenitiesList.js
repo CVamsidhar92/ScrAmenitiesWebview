@@ -44,9 +44,9 @@ export default function AmenitiesList() {
     <ScrollView>
     <View>
        
-      {list.map(item => (
+      {list.map((item,index) => (
         
-        <View key={item.id}>
+        <View key={index}>
          
           <Card style={{margin: 10}}>
             <Card.Content>
@@ -75,9 +75,9 @@ export default function AmenitiesList() {
                   Items List
                 </Button>
               ) : null}
-              <Button onPress={() => goto(item.latitude, item.longitude, item.accuracy)}>
+              {/* <Button onPress={() => goto(item.latitude, item.longitude, item.accuracy)}>
                 Directions
-              </Button>
+              </Button> */}
             </Card.Actions>
           </Card>
          
