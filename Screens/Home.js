@@ -31,30 +31,35 @@ export default function Home({ navigation }) {
       title: 'ATVMs',
       value: 'ATVMs',
       image: require('../images/atvms.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1lPOYwxtlcVHBaEcvQ5iGd-xiLK3L01I&usp=sharing',
     },
     {
       id: '002',
       title: 'Booking Counter',
       value: 'Booking Counter',
       image: require('../images/booking.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1_FjMBWgQQw_WE1Uqnczs2xTQIGFZO1c&usp=sharing',
     },
     {
       id: '003',
       title: 'PRS Counter',
       value: 'PRS Counter',
       image: require('../images/prs.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=158-IQSsQd33ncfcH5rD3G_suKwheXU4&usp=sharing',
     },
     {
       id: '004',
       title: 'Parcel Office',
       value: 'Parcel Office',
       image: require('../images/pr.jpg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1cYXIjM8DWdVgEMuSXiKgVp7MacX8F9Q&usp=sharing',
     },
     {
       id: '005',
       title: 'Waiting Hall',
       value: 'Waiting Hall',
       image: require('../images/wh.jpg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1vt9RK7JKb7n98f6AB1LigZGVTMGnRtQ&usp=sharing',
     },
     {
       id: '006',
@@ -67,73 +72,83 @@ export default function Home({ navigation }) {
       title: 'Parking',
       value: 'Parking',
       image: require('../images/parking.jpg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1H6zbnArI3i407iRkAFTGJnGmP66N1xE&usp=sharing',
     },
     {
       id: '008',
       title: 'Out Gates',
       value: 'Out Gates',
       image: require('../images/outgate.jpg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1whPq1L2DNEBXGshbIWNITbBap5ER9Xs&usp=sharing',
     },
     {
       id: '009',
       title: 'Stair Case',
       value: 'Stair Case',
       image: require('../images/str.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1TBMck2mdbRkJM6N4nEHMqofkmbHTGo0&usp=sharing',
     },
     {
       id: '010',
       title: 'Escalator',
       value: 'Escalator',
       image: require('../images/esc.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1yRBX1kmR574Ure9YgNej1mXDXzMM55Q&usp=sharing',
     },
     {
       id: '011',
       title: 'Lift',
       value: 'Lift',
       image: require('../images/lift.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1OF74XYpg8Eb6rJeontjiX6dRPio8S0A&usp=sharing',
     },
     {
       id: '012',
       title: 'Cloak Rooms',
       value: 'Cloak Rooms',
       image: require('../images/cr.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1k2ZE680MA-pBNricCOAIyHmxYQOSgYQ&usp=sharing',
     },
     {
       id: '013',
       title: 'Drinking Water',
       value: 'Drinking Water',
       image: require('../images/dw.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1qtXSLY9sF-dmP1nyXOh-VJAG4DyhTSU&usp=sharing',
     },
     {
       id: '014',
       title: 'Catering Stall',
       value: 'Catering',
       image: require('../images/catg.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1JmQ8yRBj55_fBMo901kS1KhhoZrvFX4&usp=sharing',
     },
     {
       id: '015',
       title: 'Medical',
       value: 'Medical',
       image: require('../images/medical.jpeg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1BUmL34Y7EbSK25V4r4QW_3qT73PNl2M&usp=sharing',
     },
     {
       id: '016',
       title: 'Retiring Room',
       value: 'Retiring Room',
       image: require('../images/rr.jpg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1fGRdw7px7MNqaQchnaGFV9mzOE5c7Ws&usp=sharing',
     },
     {
       id: '017',
       title: 'Bus Stop',
       value: 'Bus Stop',
       image: require('../images/bus.jpg'),
+      url: 'https://www.google.com/maps/d/edit?mid=1e92_74dZpk_QnXZHjLZufRwX_EUuiQs&usp=sharing',
     },
     {
       id: '018',
       title: 'Feedback',
       value: 'Feedback',
       image: require('../images/feed.jpg'),
-
     },
   ];
 
@@ -154,13 +169,14 @@ export default function Home({ navigation }) {
         },
       );
       const result = await response.json();
-      console.log(result);
+      // console.log(result);
       setSelectedAmenity(result);
       if (result.length > 0) {
-        setLocationsList([...new Set(result.map(item => item.location_name))]);
-        console.log(locationsList);
-        navigation.navigate('AmenitiesList',{list:locationsList});
+        setLocationsList(result);
+        // console.log(locationsList);
+        navigation.navigate('AmenitiesList',{list:result, geturl:item.url});
         // setModalVisible(true);
+        console.log(item.url)
       }
       else if (item.value == 'Feedback') {
         navigation.navigate('Feedback', {
@@ -172,13 +188,11 @@ export default function Home({ navigation }) {
     }
   };
 
-  const showAmenitiesList = location => {
-    console.log(location);
-    toggleModal();
+  const showAmenitiesList = () => {
+    // console.log(location);
+    // toggleModal();
     navigation.navigate('AmenitiesList', {
-      list: selectedAmenity.filter(el => {
-        return el.location_name == location;
-      }),
+      list: selectedAmenity
     });
   };
 
@@ -195,8 +209,8 @@ export default function Home({ navigation }) {
       </Text>
       <ScrollView>
         <View style={sty.itemContainer}>
-          {data.map(item => (
-            <View style={sty.item} key={item.id}>
+          {data.map((item,index) => (
+            <View style={sty.item} key={index}>
               <TouchableOpacity
                 style={sty.item}
                 onPress={() => selectAmenity(item)}>

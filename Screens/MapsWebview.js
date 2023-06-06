@@ -1,15 +1,30 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
+import {useRoute} from '@react-navigation/native';
 
 
 export default function MapsWebview() {
+   const route = useRoute();
+   const {geturl} = route.params;
   return (
     <View style={styles.container}>
       <WebView
-        source={{ uri: 'https://www.google.com/maps/d/edit?mid=1WWRZut_VjVSzDN1V9YkIHy2mRX3seQg&usp=sharing' }} // Set the URL of the website you want to load
+        source={{uri: geturl}} // Set the URL of the website you want to load
         style={styles.webview}
       />
+      {/* <WebView
+        source={{uri: geturl}}
+        scrollEnabled={true}
+        scalesPageToFit={false}
+        onMessage={event => {
+          const {data} = event.nativeEvent;
+          var getj = JSON.parse(data);
+          Linking.openURL(
+            'google.navigation:q=' + getj.lat + '+' + getj.lang + '&mode=w',
+          );
+        }}
+      /> */}
     </View>
   );
 };
