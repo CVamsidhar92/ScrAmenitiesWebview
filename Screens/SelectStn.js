@@ -17,7 +17,7 @@ export default function SelectStn({ navigation }) {
   // const [myversion,setmyversion] = useState('1.2');
 
   // const never forget to change this while releasing app , increment 1 every tiime 
-  var myversion = '1.3';
+  var myversion = '1.4';
   var isvisible = useIsFocused();
   console.log(isvisible)
   useEffect(() => {
