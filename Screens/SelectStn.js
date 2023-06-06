@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, Image, Dimensions, Button, Linking, BackHandler, Alert } from 'react-native';
 import { AutocompleteDropdown } from 'react-native-autocomplete-dropdown';
 import InternetConnectionAlert from 'react-native-internet-connection-alert';
+import Spinner from 'react-native-loading-spinner-overlay';
 
 import { useIsFocused } from '@react-navigation/native';
 
@@ -74,13 +75,14 @@ export default function SelectStn({ navigation }) {
     }
 
     getupdates();
-  });
+  },[]);
 
   useEffect(() => {
     getStationName();
   }, []);
 
   const getStationName = async () => {
+      this.loading=true;
     const response = await fetch(
       'https://digitalscr.in/ScrStnAmenities/api/getstation',
       {
@@ -91,6 +93,7 @@ export default function SelectStn({ navigation }) {
       },
     );
     let result = await response.json();
+    this.loading=false;
     console.log(result);
     result.map(el => {
       el.name = el.station_name;
@@ -102,13 +105,21 @@ export default function SelectStn({ navigation }) {
   return (
     <View style={styles.container}>
       <InternetConnectionAlert>
+        <Spinner
+          visible={this.loading}
+          textContent={'Loading...'}
+          textStyle={styles.spinnerTextStyle}
+        />
         <View style={styles.logoContainer}>
           <Image source={require('../images/azadi.png')} style={styles.logo} />
-          <Image source={require('../images/loginLogo.png')} style={styles.logo} />
+          <Image
+            source={require('../images/loginLogo.png')}
+            style={styles.logo}
+          />
           <Image source={require('../images/g20.jpg')} style={styles.logo} />
         </View>
         <View>
-          <View style={{ marginTop: '10%' }}>
+          <View style={{marginTop: '10%'}}>
             <Text
               style={{
                 fontSize: 28,
@@ -135,11 +146,11 @@ export default function SelectStn({ navigation }) {
               fontWeight: 'bold',
               color: 'red',
               textAlign: 'center',
-              marginTop: 5
+              marginTop: 5,
             }}>
             Please Enter Station Name
           </Text>
-          <View style={{ margin: 10 }}>
+          <View style={{margin: 10}}>
             <AutocompleteDropdown
               clearOnFocus={false}
               closeOnBlur={true}
@@ -148,7 +159,7 @@ export default function SelectStn({ navigation }) {
               dataSet={stationsList}
               paddingVertical={true}
               suggestionsListMaxHeight={Dimensions.get('window').height * 0.4}
-              color='black'
+              color="black"
             />
           </View>
 
@@ -182,7 +193,6 @@ export default function SelectStn({ navigation }) {
             maxWidth: '100%',
             marginHorizontal: 'auto',
             marginVertical: 'auto',
-            
           }}
           source={require('../images/railnilayam.png')}
         />
@@ -196,6 +206,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignContent: 'center',
   },
+  spinnerTextStyle: {
+    color: '#FFF',
+  },
   SectionStyle: {
     flexDirection: 'row',
     height: 40,
@@ -208,7 +221,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    maxWidth: 'auto'
+    maxWidth: 'auto',
   },
   logo: {
     width: 80,

@@ -7,6 +7,7 @@ import {useRoute} from '@react-navigation/native';
 export default function MapsWebview() {
    const route = useRoute();
    const {geturl} = route.params;
+   console.log(geturl);
   return (
     <View style={styles.container}>
       <WebView
