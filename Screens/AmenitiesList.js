@@ -3,6 +3,8 @@ import {View, Linking, Platform, ScrollView} from 'react-native';
 import {useRoute} from '@react-navigation/native';
 import {Button, Card, Text, List} from 'react-native-paper';
 import Modal from 'react-native-modal';
+import Spinner from 'react-native-loading-spinner-overlay';
+
 
 export default function AmenitiesList({navigation}) {
   const route = useRoute();
@@ -17,6 +19,7 @@ export default function AmenitiesList({navigation}) {
     Linking.openURL(url);
   }
   const getItemsList = async() => {
+     this.loading = true;
     const response = await fetch(
       'https://digitalscr.in/ScrStnAmenities/api/getItemsList',
       {
@@ -31,6 +34,7 @@ export default function AmenitiesList({navigation}) {
       },
     );
     const result = await response.json();
+     this.loading = false;
     // console.log(result);
     setItemsList(result);
     toggleModal();
@@ -43,13 +47,18 @@ export default function AmenitiesList({navigation}) {
   return (
     <ScrollView>
       <View style={{marginTop: 20}}>
+        <Spinner
+          visible={this.loading}
+          textContent={'Loading...'}
+          textStyle={{color: '#FFF'}}
+        />
         <Button
           icon="map"
           style={{margin: 20}}
           mode="contained"
           onPress={() =>
             navigation.navigate('MapsWebView', {
-              geturl: geturl
+              geturl: geturl,
             })
           }>
           Click Here to View Map

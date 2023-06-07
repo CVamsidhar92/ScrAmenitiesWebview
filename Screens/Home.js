@@ -181,8 +181,14 @@ const [mapView,setMapView] = useState('');
       if (result1.length > 0 ) {
         setLocationsList(result1);
         // console.log(locationsList);
-
-        navigation.navigate('AmenitiesList',{list:result1, geturl:result[0]['url']});
+if (result.length > 0) {
+  navigation.navigate('AmenitiesList', {
+    list: result1,
+    geturl: result[0]['url'],
+  });
+} else {
+  alert('Map View Is Not Updated...');
+}
         // setModalVisible(true);
         // console.log(result);
       }

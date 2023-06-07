@@ -2,14 +2,22 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
 import {useRoute} from '@react-navigation/native';
+import Spinner from 'react-native-loading-spinner-overlay';
 
 
 export default function MapsWebview() {
+  this.loading = true;
    const route = useRoute();
    const {geturl} = route.params;
+   this.loading = false;
   //  console.log(geturl);
   return (
     <View style={styles.container}>
+      <Spinner
+        visible={this.loading}
+        textContent={'Loading...'}
+        textStyle={{color: '#FFF'}}
+      />
       <WebView
         source={{uri: geturl}} // Set the URL of the website you want to load
         style={styles.webview}
