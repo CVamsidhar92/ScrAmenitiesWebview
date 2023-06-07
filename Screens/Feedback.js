@@ -49,7 +49,7 @@ export default function Feedback({ navigation }) {
                 },
             );
             const result = await response.json();
-            console.log("Success:", result);
+            // console.log("Success:", result);
             if (result == 'success') {
                 alert('Feedback Submitted Successfully');
                 navigation.navigate('SelectStn');

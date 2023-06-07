@@ -184,7 +184,7 @@ const [mapView,setMapView] = useState('');
 
         navigation.navigate('AmenitiesList',{list:result1, geturl:result[0]['url']});
         // setModalVisible(true);
-        console.log(result);
+        // console.log(result);
       }
       else if (item.value == 'Feedback') {
         navigation.navigate('Feedback', {

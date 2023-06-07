@@ -7,7 +7,7 @@ import Modal from 'react-native-modal';
 export default function AmenitiesList({navigation}) {
   const route = useRoute();
   const {list, geturl} = route.params;
-console.log(geturl);
+// console.log(geturl);
   const [itemsList, setItemsList] = useState([]);
   const [isModalVisible, setModalVisible] = useState(false);
 
@@ -31,7 +31,7 @@ console.log(geturl);
       },
     );
     const result = await response.json();
-    console.log(result);
+    // console.log(result);
     setItemsList(result);
     toggleModal();
   };

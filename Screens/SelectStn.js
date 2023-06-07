@@ -20,12 +20,12 @@ export default function SelectStn({ navigation }) {
   // const never forget to change this while releasing app , increment 1 every tiime 
   var myversion = '1.5';
   var isvisible = useIsFocused();
-  console.log(isvisible)
+  // console.log(isvisible)
   useEffect(() => {
     const getupdates = async () => {
 
       try {
-        console.log(' i am called ')
+        // console.log(' i am called ')
         var data = { name: myversion };
 
         const response = await fetch('https://digitalscr.in/ScrStnAmenities/api/appversionamenities', {
@@ -36,14 +36,14 @@ export default function SelectStn({ navigation }) {
           body: JSON.stringify(data),
         });
         const result1 = await response.json();
-        console.log(result1);
+        // console.log(result1);
         if (myversion !== result1[0]['appversion']) {
           // Check if force update alert has been shown before
 
           // console.log(result);
           if ('false' !== 'true') {
             // Show force update alert
-            console.log('i m insede of alert')
+            // console.log('i m insede of alert')
             Alert.alert(
               'Please Update',
               `You must update the app to the latest version to continue using. Latest version is ${result1[0]['appversion']} and your verison is ${myversion}`,
@@ -94,7 +94,7 @@ export default function SelectStn({ navigation }) {
     );
     let result = await response.json();
     this.loading=false;
-    console.log(result);
+    // console.log(result);
     result.map(el => {
       el.name = el.station_name;
       el.title = el.station_name;
